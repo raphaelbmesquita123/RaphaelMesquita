@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1297px){
+    /* ======================= HEADER ======================*/
+
+}
+@media only screen and (max-width: 1023px){
+    /* ======================= HEADER ======================*/
+
+}
+@media only screen and (max-width: 860px){
+    /* ======================= HEADER ======================*/
+    .infoText{
+      left: 5%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      top: 30%;
+    }
+
+    .infoText p{
+      width: 90%;
+      margin-left: 20px;
+      margin-top: 0;
+      margin-right: 0;
+    }
+    
+    .socialMedia{
+      bottom: 5%;
+    }
+}
+@media only screen and (max-width: 480px){
+    /* ======================= HEADER ======================*/
+    .containerInfo{
+      height: 90%;
+    }
+
+    .infoPhoto{
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -2%;
+      width: 100%;
+      margin-left: 3%;
+    }
+
+/* ============ infoText ============ */
+       
+  .menuToggle li a{
+    font-size: 0.8rem;
+  }
+  /* ============ infoText ============ */
+    
+    .infoText{
+      flex-direction: column;
+      top: 22%;
+    }
+
+    .infoText{
+      font-size: 0.8rem;
+    }
+
+    .infoText div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .infoText p{
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30px;
+    }
+
+    .socialMedia{
+      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 2%;
+    }
+
+ 
+}
+
+@media only screen and (max-width: 400px){
+    .infoPhoto{
+      width: 180%;
+    }
+}
