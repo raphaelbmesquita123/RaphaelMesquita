@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter';
+}
+
+.calculadora{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: -10px 10px 4px rgba(0,0,0,0.2);
+}
+
+.display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 100px;
+
+}
+
+.display div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.display div h3{
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+.displayBtn{
+  display: flex;
+  flex-direction: column;
+}
+
+.btnHorizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  width: 70px;
+  height: 50px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border:transparent;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+button:active{
+  transform: scale(0.9);
+  box-shadow: -3px 2px 4px rgba(0,0,0,0.4);
+}
+
+button:focus{
+  outline: none;
+}
+
+.btnOpenBrackets,
+.btnCloseBrackets,
+.btnPorcentage,
+.btnPlus,
+.btnMultiply,
+.btnMinus,
+.btnPlus2{
+  background-color: rgb(202, 202, 202);
+  color: black;
+}
+
+.btnEqual,
+.btnAC{
+  background-color: red;
+}
