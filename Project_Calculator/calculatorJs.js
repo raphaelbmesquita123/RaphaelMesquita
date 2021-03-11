@@ -43,13 +43,18 @@ allButtons.forEach(function(btn) {
       } else if (btn.className === 'btnCloseBrackets'){
         btnArray.push(')')
         displayText.textContent = btnArray.join('')
-      } else if (btn.className === 'btnPorcentage'){
-        btnArray.push('%')
+      } else if (btn.className === 'btnDEL'){
+        btnArray.pop('')
         displayText.textContent = btnArray.join('')
-      } else if (btn.className === 'btnPlus' || btn.className === 'btnPlus2'){
+
+      } else if (btn.className === 'btnPlus'){
         btnArray.push('+')
         displayText.textContent = btnArray.join('')
-      } else if (btn.className === 'btnMultiply'){
+
+      } else if(btn.className === 'btnDivided'){
+        btnArray.push('/')
+        displayText.textContent = btnArray.join('')
+      }else if (btn.className === 'btnMultiply'){
         btnArray.push('*')
         displayText.textContent = btnArray.join('')
       } else if (btn.className === 'btnMinus'){
@@ -65,12 +70,26 @@ allButtons.forEach(function(btn) {
 })
 
 
+function getLength (number){
+  return number.toString().length
+}
+
+
 btnAC.addEventListener('click', () =>{
   displayText.textContent = ''
   btnArray = []
 })
 
 btnEqual.addEventListener('click', () => {
-  let result = btnArray.join('')
-  console.log(typeof Number(result), parseFloat(result))
+  let result = eval(btnArray.join(''))
+  let resultString = result.toString()
+  console.log(resultString)
+  if(getLength(result) > 14){
+    displayText.textContent = resultString.slice(0,13)
+  } else{
+    displayText.textContent = result
+  }
+  
+  
+  btnArray = []
 })
