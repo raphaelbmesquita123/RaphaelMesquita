@@ -50,6 +50,37 @@ body{
   margin-top: 10px;
   color: white;
 }
+/* 
+=====================================
+      DOWNLOAD - ALL PAGES
+===================================== */
+
+.downloadAllPages{
+  background-color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadAllPages h2{
+  color: var(--color1);
+  padding:50px 0px;
+}
+
+.downloadAllPages a{
+  display: block;
+  background-color: var(--color1);
+  color:white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.downloadAllPages a:hover{
+  transform: scale(0.95);
+}
+
+
 
 /* 
 =====================================
