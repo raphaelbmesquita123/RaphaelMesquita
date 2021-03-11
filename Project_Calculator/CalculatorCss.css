@@ -1,21 +1,60 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
 }
 
 body{
-  display: flex;
+  overflow-x: hidden;
+}
+
+/* ============ MENU TOGGLE ALL PAGES============ */
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+.containerAllPages{
+  position: relative;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
+}
+
+.menuToggle{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transition: width 0.6s linear;
+  top: 0;
+  right: 0;
+}
+
+/* ============ project code ============ */
+
+.projectCalculator{
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter';
+  width: 100%;
+  background-color: var(--color1);
+  height: 500px;
 }
 
 .calculadora{
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(0, 0, 0);
   flex-direction: column;
+  width: 300px;
   border-radius: 20px;
   box-shadow: -10px 10px 4px rgba(0,0,0,0.2);
 }
@@ -26,22 +65,28 @@ body{
   align-items: center;
   color: black;
   height: 100px;
-
+  width: 90%;
 }
 
 .display div{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  width: 90%;
+  width: 330px;
   height: 70%;
   border-radius: 10px;
   background-color: white;
+  overflow: hidden;
 }
 
 .display div h3{
-  margin-right: 20px;
-  font-size: 2rem;
+  font-style: italic;
+  margin-left: 15px;
+  font-size: 1.8rem;
+}
+
+.allBtns{
+  padding: 10px;
 }
 
 .displayBtn{
@@ -49,15 +94,17 @@ body{
   flex-direction: column;
 }
 
+
 .btnHorizontal{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 button{
-  width: 70px;
-  height: 50px;
-  margin: 10px;
+  width: 55px;
+  height: 45px;
+  margin: 8px;
   font-size: 1.1rem;
   border-radius: 10px;
   border:transparent;
@@ -76,11 +123,11 @@ button:focus{
 
 .btnOpenBrackets,
 .btnCloseBrackets,
-.btnPorcentage,
+.btnDEL,
 .btnPlus,
 .btnMultiply,
 .btnMinus,
-.btnPlus2{
+.btnDivided{
   background-color: rgb(202, 202, 202);
   color: black;
 }
@@ -88,4 +135,8 @@ button:focus{
 .btnEqual,
 .btnAC{
   background-color: red;
+}
+
+@media only screen (max-width: 480px){
+  
 }

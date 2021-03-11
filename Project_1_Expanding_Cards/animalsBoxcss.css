@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* ============ MENU TOGGLE ALL PAGES============ */
 
 :root{

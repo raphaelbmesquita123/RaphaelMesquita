@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+body{
+  overflow-x:hidden;
+}
+
 /* ============ MENU TOGGLE ALL PAGES============ */
 
 :root{
@@ -131,4 +135,16 @@ section h3{
 .text {
   text-align: center;
   margin: 0 0 5px;
+}
+
+@media only screen and (max-width: 480px){
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cups{
+    margin: 0;
+  }
 }
