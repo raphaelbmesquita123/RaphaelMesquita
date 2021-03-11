@@ -77,11 +77,11 @@ body{
     opacity: 0;
 }
 
-.active{
+.activePanel{
     flex: 0.6;
 }
 
-.active h3{
+.activePanel h3{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
@@ -93,7 +93,7 @@ body{
         flex: 0.1;
     }
 
-    .panel.active{
+    .panel.activePanel{
         flex: 0.7;
     }
 
