@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+body{
+  overflow-x:hidden;
+}
+
+/* ============ project code ============ */
+
+section{
+  background-color: var(--color1);
+}
+
+.movieSearchBar{
+  padding: 20px;
+  background-color: var(--color2);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search{
+  background-color: transparent;
+  border: 2px solid var(--color1);
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.search::placeholder{
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.search:focus{
+  outline: none;
+  background-color: var(--color1);
+}
+
+.moviesDisplay{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  justify-content: center;
+}
+
+.movie{
+  width: 300px;
+  margin: 10px;
+  background-color: var(--color2);
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
+  position: relative;
+  overflow:hidden;
+  border-radius: 3px;
+}
+
+.movie img{
+  width: 100%;
+}
+
+.movie-info{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px 15px;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+  margin-top: 0;
+}
+
+.movie-info span{
+  background-color: var(--color1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green{
+  color: lightgreen;
+}
+
+.movie-info span.orange{
+  color: orange;
+}
+
+.movie-info span.red{
+  color: rgb(255, 0, 0);
+}
+
+.overview{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.overview>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.overview p{
+  text-align: justify;
+}
+
+.movie:hover .overview{
+  transform: translateY(0);
+}
+
+.overview a{
+  color: var(--color2);
+  font-weight: bold;
+}
