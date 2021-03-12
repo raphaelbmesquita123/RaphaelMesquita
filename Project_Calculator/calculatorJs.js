@@ -93,3 +93,4 @@ btnEqual.addEventListener('click', () => {
   
   btnArray = []
 })
+

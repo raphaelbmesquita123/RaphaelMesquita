@@ -40,20 +40,6 @@
     margin-left: 3%;
   }
 
-    /* 
-  =====================================
-        DOWNLOAD - ALL PAGES
-  ===================================== */
-  .downloadAllPages h2{
-    font-size: 15px ;
-  }
-
-  .downloadAllPages a{
-    font-size: 10px;
-    padding: 5px;
-  }
-
-
   /* ============ infoText ============ */
 
   .menuToggle li a {
@@ -95,6 +81,6 @@
 
 @media only screen and (max-width: 400px) {
   .infoPhoto {
-    width: 190%;
+    width: 150%;
   }
 }
