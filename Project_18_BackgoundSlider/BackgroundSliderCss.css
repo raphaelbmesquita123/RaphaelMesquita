@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", "Arial";
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+/* ============ project code ============ */
+
+section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s ease;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider-container {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideImage {
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: -15vh;
+  left: -15vw;
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.slideImage.activeImage {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  padding: 0px 10px;
+  font-size: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid orangered;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrowLeft {
+  left: calc(15vw - 65px);
+}
+
+.arrowRight {
+  right: calc(15vw - 65px);
+}
+
+@media only screen and (max-width: 480px) {
+  .arrow {
+    top: 92%;
+  }
+
+  .arrowLeft {
+    left: 30%;
+  }
+
+  .arrowRight {
+    right: 30%;
+  }
+}
