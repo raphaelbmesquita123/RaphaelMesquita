@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+/* ============ project section ============ */
+.projectSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px;
+  background-color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.darkMode{
+  background-color: black;
+  color: white
+}
+
+/* ============ slide btn ============ */
+.slideBtn{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.darkBtn{
+  position: absolute;
+  top: 0;
+  left: -10%;
+  transform: translateX(0);
+  font-size: 8px;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.darkBtnActive{
+  background-color: white;
+  color: black;
+  transform: translateX(50%)
+}
+
+.darkBtn:focus{
+  outline: none;
+}
+  
+/* ============ pointers ============ */
+.pointersDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  padding: 110px;
+  width: 200px;
+  height: 200px;
+}
+
+.hourPointer{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 2px;
+  height: 50px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s ease ;
+}
+
+.minPointer{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 2px;
+  height: 80px;
+  transform-origin: bottom center;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s ease ;
+}
+
+.secondsPointer{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+  background-color: orangered;
+  transform-origin: bottom center;
+  transition: all 0.5s ease ;
+}
+
+.circlePointer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid orangered;
+  border-radius: 50px;
+  background: black;
+  z-index: 2;
+}
+/* ============ hour display ============ */
+
+.hourDisplay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.hourDisplay h2{
+  font-size: 15px;
+  font-weight:lighter;
+}
