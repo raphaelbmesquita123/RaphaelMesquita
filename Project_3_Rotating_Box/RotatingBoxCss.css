@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+/* ============ project code ============ */
+
+
+.projectsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.principalRotatingBox{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: var(--color2);
+  box-shadow: -6px 6px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.imageBoxButtons{
+  position: absolute;
+  background-color: transparent;
+  z-index: 2;
+  background-color: var(--color2);
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+.BoxButtonsRotate{
+  transform: rotate(-90deg);
+}
+
+.boxBtn{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor:pointer;
+}
+
+.boxBtn:focus{
+  outline: none;
+}
+
+.btnO{
+  bottom: 20px;
+  right: 20px;
+}
+
+.btnX{
+  bottom: 20px;
+  left: 20px;
+}
+
+.textImageBox {
+  color: var(--color1);
+  text-align: justify;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.imageBox{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  transform-origin: top left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imageBoxRotate{
+  transform: rotate(-50deg);  
+}
+
+.imageBox img{
+  height: 100%;
+  border-radius: 5px;
+}
+
+.imageBox h2{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: white;
+  font-size: 14px;
+  background-color: var(--color2);
+  padding: 2px;
+  box-shadow: -2px 2px 3px rgba(0,0,0,0.5);
+}
