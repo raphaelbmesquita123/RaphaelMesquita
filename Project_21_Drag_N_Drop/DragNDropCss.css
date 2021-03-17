@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+
+/* ============ project section ============ */
+header{
+  display: none;
+}
+
+.projectSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color1);
+}
+
+.empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background-color: var(--color2);
+}
+
+.fill{
+  background-image: url(../Imagens/1.jpg);
+  height: 140px;
+  width: 140px;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.hold{
+  border: solid 5px gray;
+}
+
+.hovered{
+  background-color: black;
+  border-color: white;
+  border-style: dashed;
+}
+
+@media only screen and (max-width: 800px) {
+  .projectSection{
+    flex-direction: column;
+  }
+}
