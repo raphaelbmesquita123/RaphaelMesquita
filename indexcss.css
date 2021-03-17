@@ -244,6 +244,9 @@ header{
 .projectsBox a{
   margin: 10px;
 }
+.projectsBox a p {
+  padding: 10px;
+}
 
 .box{
   display: flex;
