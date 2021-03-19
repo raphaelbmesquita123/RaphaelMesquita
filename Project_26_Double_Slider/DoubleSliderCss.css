@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.projectContainer{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.imageContent{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContentPhoto{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-0%);
+  transition: all 1s ease-in-out;
+}
+
+.imageContentActive{
+  transform: translateY(-100%)
+}
+
+.textContent{
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.textContentText{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-400%);
+  transition: all 1s ease-in-out;
+}
+
+.buttonsContent{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  height: 80px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.buttonsContent button{
+  width: 30px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--color2);
+  border: none;
+}
+.buttonsContent button:last-child{
+  align-self: flex-end;
+}
+
+.buttonsContent button:focus{
+  outline: none;
+}
+
+@media (max-width: 500px){
+  .projectContainer{
+    flex-direction: column;
+  }
+  .imageContent{
+    width: 100%;
+    height: 70%;
+  }
+
+  .textContent{
+    width: 100%;
+    height: 30%;
+  }
+  .buttonsContent{
+    top: 30%;
+    left:50%;
+  }
+
+}
