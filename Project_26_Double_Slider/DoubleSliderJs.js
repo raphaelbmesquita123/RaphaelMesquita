@@ -24,6 +24,7 @@ upButton.addEventListener('click', () => {
   imageContentPhoto.forEach((image) => {
     if(acumulator === 0){
       image.style.transform = `translateY(0%)`
+      upButton.style.display = 'flex'
     } if (acumulator === 1){
       image.style.transform = `translateY(-100%)`
     } if (acumulator === 2){
