@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.projectContainerBox{
+  text-align: center;
+  padding: 50px;
+  background-color: var(--color1);
+}
+
+.projectContainerBox h3{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+small{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.fa-heart{
+  color: red;
+}
+
+.loveMe{
+  height: 440px;
+  width: 300px;
+  background-image: url(../Imagens/1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0px 14px 28px rgba(0,0,0,0.6);
+}
+
+.heartInside{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
+.heartInside i{
+  color: white;
+  margin: auto;
+  font-size: 100px;
+  opacity: 0%;
+  transition: opacity 0.5s ease-in-out;
+}
+
