@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="../indexcss.css">
   <link rel="stylesheet" href="../query.css">
   <link rel="stylesheet" href="../allpages.css" />
-  <link rel="stylesheet" href="PlaceHolderCss.css">
-  <title>Content Place Holder</title>
+  <link rel="stylesheet" href="AutoTextCss.css">
+  <title>Auto Text Effect</title>
 </head>
 <body>
+
   <header class="containerAllPages">
     <div class="textAllPages">
       <h1>PROJECT BELLOW</h1>
@@ -25,49 +26,38 @@
       <ul>
         <li><a href="../index.html" class="oi">HOME</a></li>
       </ul>
-      
+
       <button class="menuButton">
         <span class="span1"></span>
         <span class="span2"></span>
       </button>
+      
     </nav>
   </header>
 
-
-  <section class="projectSection">
-    <div class="card">
-      <div class="card-header animated-bg" id="header">
-        
-      </div>
-      <div class="card-content">
-        <h3 class="card-title animated-bg animated-bg-text" id="title"></h3>
-        <p class="card-excerpt" id="excerpt">
-          <span class="animated-bg animated-bg-text">&nbsp;</span>
-          <span class="animated-bg animated-bg-text">&nbsp;</span>
-          <span class="animated-bg animated-bg-text">&nbsp;</span>
-        </p>
-        <div class="author">
-          <div class="profile-img animated-bg" id="profile_img">
-            
-          </div>
-          <div class="author-info">
-            <strong class="animated-bg animated-bg-text" id="name"></strong>
-            <small class="animated-bg animated-bg-text" id="date"></small>
-          </div>
-        </div>
-      </div>
+  <section class="projectContainer">
+    <div class="textContentDiv">
+      <input type="text" id="textContent"> 
+      <button id="textContentButton"><i class="fas fa-arrow-down"></i></button>
     </div>
+    
 
-    <h2>UPDATE THE PAGE TO SEE THE EFECT</h2>
+    <h2 id="autoText">Starting...</h2>
+    
+    <div class="speedDiv">
+      <label for="speed">Speed:</label>
+      <input type="number" id="number" name="speed" value="1" min="1" max="5" step="1">
+    </div>
   </section>
-
+  
 
   <div class="downloadAllPages">
-
+    
   </div>
   
 
   <script src="../indexjs.js"></script>
-  <script src="PlaceHolderJs.js"></script>
+  <script src="AutoTextJs.js"></script>
+  <script src="https://kit.fontawesome.com/1d062ab49d.js" crossorigin="anonymous"></script>
 </body>
 </html>
