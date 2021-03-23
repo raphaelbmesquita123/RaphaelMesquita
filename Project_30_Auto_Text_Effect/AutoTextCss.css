@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.projectContainer{
+  background-color: var(--color1);
+  height: 50vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.speedDiv{
+  position: absolute;
+  bottom: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+}
+
+.textContentDiv{
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 10px;
+}
+
+#textContentButton {
+  padding: 5px;
+}
+
+#textContentButton:focus{
+  outline: none;
+}
+
+#textContent{
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px;
+}
+
+#number{
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}

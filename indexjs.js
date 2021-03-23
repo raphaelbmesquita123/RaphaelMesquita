@@ -8,3 +8,4 @@ menuButton.addEventListener('click', () => {
   span1.classList.toggle('span1Active')
   span2.classList.toggle('span2Active')
 })
+
