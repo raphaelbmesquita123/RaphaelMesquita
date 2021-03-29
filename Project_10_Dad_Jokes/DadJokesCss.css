@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito','Arial';
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+  :root{
+    --color1: rgb(0, 92, 179);
+    --color2: rgb(0, 18, 53);
+  }
+  
+  
+  /* ============ project code ============ */
+  
+
+  .projectContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--color1);
+    height: 100vh;
+  }
+  
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 800px;
+}
+
+h3{
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.joke{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.btn{
+    background-color: #9f68E0;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 10px 20px rgb(165, 165, 165);
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline:0
+}

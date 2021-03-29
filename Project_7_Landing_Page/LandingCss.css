@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito','Arial';
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+  :root{
+    --color1: rgb(0, 92, 179);
+    --color2: rgb(0, 18, 53);
+  }
+  
+  
+  /* ============ project code ============ */
+
+  .projectContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--color1);
+    height: 100vh;
+  }
+  
+
+.containerLanding{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.landingLeftBox{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(../Imagens/1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: width 0.8s ease-in-out;
+}
+
+.landingRightBox{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(../Imagens/2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: width 0.8s ease-in-out;
+}
+
+.activated{
+    width: 120%;
+}
+
+.btn{
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+h2{
+    color: white;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px){
+    .containerLanding{
+        flex-direction: column;
+    }
+
+    .landingLeftBox{
+        width: 100%;
+        height: 100%;
+        transition: height 0.8s ease-in-out;
+    }
+    
+    .landingRightBox{
+        width: 100%;
+        height: 100%;
+        transition: height 0.8s ease-in-out;
+    }
+    
+    .activated{
+        width: 100%;
+        height: 180%;
+    }
+}
