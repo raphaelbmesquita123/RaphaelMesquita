@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color1);
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.carousel{
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  height: 530px;
+  width: 350px;
+  overflow: hidden;
+
+}
+
+.image-container{
+  display: flex;
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img{
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container button{
+  background-color: var(--color2);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.buttons-container button:hover{
+  opacity: 0.8;
+}
+
+.buttons-container button:focus{
+  outline: none;
+}
+
