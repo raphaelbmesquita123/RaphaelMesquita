@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color1);
+  position: relative;
+  height: 100vh;
+}
+
+.magic{
+  background-color: var(--color2);
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  letter-spacing: 1px;
+  z-index: 100;
+}
+
+.magic:focus{
+  outline: none;
+}
+
+.magic:active{
+  transform: scale(0.96);
+}
+
+.magic-boxes{
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  justify-content: space-around;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.big{
+  width: 600px;
+  height: 600px;
+}
+
+.magic-boxes.big .magic-box{
+  transform: rotate(360deg);
+}
+
+.magic-box{
+  background: url('https://media.giphy.com/media/EZqwsBSPlvSda/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+}
+
+.magic-box:after{
+  content: '';
+  background-color: var(--color2);
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+}
+
+.magic-box:before{
+  content: '';
+  background-color: rgb(5, 44, 122);
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}
+
+@media only screen and (max-width: 400px ){
+  .magic-boxes{
+    margin-top: 0px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .big{
+    width: 340px;
+    height: 340px;
+  }
+
+  .magic-box{
+    background-size: 340px 340px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .magic-box:after{
+    display: none;
+  }
+  
+  .magic-box:before{
+    display: none;
+  }
+  
+
+}
