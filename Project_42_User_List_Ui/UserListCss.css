@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.containerUser img{
+  height: 50px;
+}
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color1);
+  height: 100vh;
+}
+
+.containerUser{
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.titleUser{
+  margin: 0;
+}
+
+.subtitleUser{
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+}
+
+.headerUser{
+  background-color: #3e57db;
+  color: white;
+  padding: 30px 20px;
+}
+
+.headerUser input{
+  background-color: rgba(0,0,0,0.3);
+  border: 0;
+  border-radius: 50px;
+  font-size: 14px;
+  color: white;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.headerUser input:focus{
+  outline: none;
+}
+
+.user-list{
+  background: white;
+  margin: 0;
+  min-height: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.user-list li{
+  display: flex;
+  padding: 20px;
+}
+
+.user-list img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.user-list .user-info{
+  margin-left: 10px;
+}
+
+.user-list .user-info h4{
+  margin: 0 0 14px;
+}
+
+.user-list .user-info p {
+  font-size: 12px;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide{
+  display: none;
+}
