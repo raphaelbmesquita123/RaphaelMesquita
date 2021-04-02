@@ -34,6 +34,15 @@
   </header>
 
   <section class="projectCalculator">
+    <div class="customizeMe">
+      <h2>CUSTOMIZE ME </h2>
+      <h4>Calculator Color: <input type="color" id="calculatorColor"></h4>
+      <h4>Buttons Color: <input type="color" id="allbtnsColor"></h4>
+      <h4>Text Buttons Color: <input type="color" id="textColor"></h4>
+      <h4>Symbol Color: <input type="color" id="symbolColor"></h4>
+      <h4>AC and = Color: <input type="color" id="acColor"></h4>
+    </div>
+
     <div class="calculadora">
       
       <div class="display">
@@ -45,10 +54,10 @@
       <div class="allBtns">
         <div class="displayBtn">
           <div class="btnHorizontal">
-            <button class="btnOpenBrackets">(</button>
-            <button class="btnCloseBrackets">)</button>
-            <button class="btnDEL">DEL</button>
-            <button class="btnAC">AC</button>
+            <button class="btnOpenBrackets symbol">(</button>
+            <button class="btnCloseBrackets symbol">)</button>
+            <button class="btnDEL symbol">DEL</button>
+            <button class="btnAC acSymbol">AC</button>
           </div>
         </div>
 
@@ -57,7 +66,7 @@
             <button class="btn7">7</button>
             <button class="btn8">8</button>
             <button class="btn9">9</button>
-            <button class="btnDivided">/</button>
+            <button class="btnDivided symbol">/</button>
           </div>
         </div>
 
@@ -66,7 +75,7 @@
             <button class="btn4">4</button>
             <button class="btn5">5</button>
             <button class="btn6">6</button>
-            <button class="btnMultiply">*</button>
+            <button class="btnMultiply symbol">*</button>
           </div>
         </div>
 
@@ -75,16 +84,16 @@
             <button class="btn1">1</button>
             <button class="btn2">2</button>
             <button class="btn3">3</button>
-            <button class="btnMinus">-</button>
+            <button class="btnMinus symbol">-</button>
           </div>
         </div>
 
         <div class="displayBtn">
           <div class="btnHorizontal">
+            <button class="btnComma symbol">.</button>
             <button class="btn0">0</button>
-            <button class="btnComma">.</button>
-            <button class="btnEqual">=</button>
-            <button class="btnPlus">+</button>
+            <button class="btnEqual acSymbol">=</button>
+            <button class="btnPlus symbol">+</button>
           </div>
         </div>
       </div>

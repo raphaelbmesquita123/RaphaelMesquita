@@ -204,6 +204,7 @@ header{
 }
 
 .socialMedia a{
+  font-size: 20px;
   color: rgb(173, 173, 173);
   margin-right: 15px;
 }
@@ -224,13 +225,27 @@ header{
 
 .messageContainer{
   display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
-.messageContainer h2{
-  padding: 30px;
-  color: var(--color2);
+
+.messageContainer small{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.messageContainer small div{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: rgb(9, 16, 112);
+  border-radius: 5px;
 }
 
 .projectsBox{
@@ -263,4 +278,8 @@ header{
 
 .box:active{
   transform: scale(0.9);
+}
+
+#favorite{
+  background-color: rgb(9, 16, 112);
 }
