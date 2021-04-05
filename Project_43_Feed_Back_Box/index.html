@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="../indexcss.css">
   <link rel="stylesheet" href="../query.css">
   <link rel="stylesheet" href="../allpages.css" />
-  <link rel="stylesheet" href="CountersCss.css">
-  <title>Counters</title>
+  <link rel="stylesheet" href="FeedBackCss.css">
+  <title>Feed Back Box</title>
 </head>
 <body>
 
@@ -36,24 +36,26 @@
   </header>
 
   <section class="projectContainer">
-      
-      <div class="counter-container">
-        <i class="fab fa-twitter fa-3x"></i>
-        <div class="counter" data-target ="12000"></div>
-        <span>Twitter Followers</span>
+    <div id="panel" class="painel-container">
+      <strong>How satisfied are you with our <br/>
+      customer support performace?</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187150.svg" alt="">
+          <small>Unhappy</small>
+        </div>
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187136.svg" alt="">
+          <small>Neutral</small>
+        </div>
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187133.svg" alt="">
+          <small>Satisfied</small>
+        </div>
       </div>
-    
-      <div class="counter-container">
-        <i class="fab fa-youtube fa-3x"></i>
-        <div class="counter" data-target ="5000"></div>
-        <span>YouTube Subscribers</span>
-      </div>
-    
-      <div class="counter-container">
-        <i class="fab fa-facebook fa-3x"></i>
-        <div class="counter" data-target ="7500"></div>
-        <span>Facebook Fans</span>
-      </div>
+      <button class="painelBtn" id="btnSend">Send Review</button>
+    </div>
+
 
   </section>
 
@@ -63,7 +65,7 @@
   
 
   <script src="../indexjs.js"></script>
-  <script src="CountersJs.js"></script>
+  <script src="FeedBackJs.js"></script>
   <script src="https://kit.fontawesome.com/1d062ab49d.js" crossorigin="anonymous"></script>
 </body>
 </html>
