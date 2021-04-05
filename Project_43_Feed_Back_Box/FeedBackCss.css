@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito','Arial';
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --color1: rgb(0, 92, 179);
+  --color2: rgb(0, 18, 53);
+}
+
+
+/* ============ project code ============ */
+
+
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color1);
+  height: 100vh;
+}
+
+.painel-container{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.painel-container strong{
+  line-height: 20px;
+}
+
+.ratings-container{
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating{
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px; 
+}
+
+.rating:hover,
+.rating.active{
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.rating img{
+  width: 40px;
+}
+
+.rating small{
+  color: #555;
+  display: inline-block;
+  margin: 10px 0 0 ;
+}
+
+.rating:hover small,
+.rating.active small{
+  color: #111;
+}
+
+.painelBtn{
+  background-color: var(--color2);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.painelBtn:focus{
+  outline: 0;
+}
+
+.painelBtn:active{
+  transform: scale(0.95);
+}
+
+.fa-heart{
+  color: red;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
