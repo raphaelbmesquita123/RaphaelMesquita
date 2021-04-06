@@ -14,30 +14,35 @@
     width: 90%;
     top: 30%;
   }
+  
+  .text-info{
+    margin-top: 80px;
+  }
 
   .infoText p {
     width: 90%;
     margin-left: 20px;
-    margin-top: 0;
+    margin-top: 20px;
     margin-right: 0;
   }
 
   .socialMedia {
     bottom: 5%;
   }
+
+  .infoPhoto{
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
-  /* ======================= HEADER ======================*/
+  /* ======================= HEADER ======================*/+
+  
   .containerInfo {
     height: 90%;
   }
 
-  .infoPhoto {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -2%;
-    width: 100%;
-    margin-left: 3%;
+  .text-info{
+    margin-top: 0px;
   }
 
   /* ============ infoText ============ */
@@ -49,11 +54,8 @@
 
   .infoText {
     flex-direction: column;
-    top: 22%;
-  }
-
-  .infoText {
-    font-size: 0.8rem;
+    top: 50%;
+    font-size: 0.7rem;
   }
 
   .infoText div {
@@ -75,12 +77,16 @@
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2%;
+    bottom: -1%;
+  }
+
+  .box{
+    width: 120px;
+    height: 120px;
+  }
+
+  .box p{
+    font-size: 0.8rem
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .infoPhoto {
-    width: 100%;
-  }
-}
